@@ -2,3 +2,11 @@ D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\C
 D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.AssemblyInfoInputs.cache
 D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.AssemblyInfo.cs
 D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.csproj.CoreCompileInputs.cache
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.sourcelink.json
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\bin\Debug\net8.0\ClasesPOO.deps.json
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\bin\Debug\net8.0\ClasesPOO.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\bin\Debug\net8.0\ClasesPOO.pdb
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\refint\ClasesPOO.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.pdb
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ref\ClasesPOO.dll

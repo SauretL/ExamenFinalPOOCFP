@@ -18,15 +18,15 @@ namespace ClasesPOO
 
         //Constructores
 
-        public Televisor(string marca, string modelo, decimal consumoBaseWatts, int pulgadas)
-          : base(marca, modelo, consumoBaseWatts)
+        public Televisor(int id, string marca, string modelo, decimal consumoBaseWatts, int pulgadas)
+          : base(id, marca, modelo, consumoBaseWatts)
         {
             this.pulgadas = pulgadas;
             this.resolucion = ResolucionTV.FULLHD;
         }
 
-        public Televisor(string marca, string modelo, decimal consumoBaseWatts, int pulgadas, ResolucionTV resolucion)
-  : base(marca, modelo, consumoBaseWatts)
+        public Televisor(int id, string marca, string modelo, decimal consumoBaseWatts, int pulgadas, ResolucionTV resolucion)
+  : base(id, marca, modelo, consumoBaseWatts)
         {
             this.pulgadas = pulgadas;
             this.resolucion = resolucion;

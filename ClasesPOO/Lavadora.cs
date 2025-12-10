@@ -18,15 +18,15 @@ namespace ClasesPOO
         private const decimal FACTOR_CARGA = 0.75m;
 
         //Constructores
-        public Lavadora(string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos)
-           : base(marca, modelo, consumoBaseWatts)
+        public Lavadora(int id, string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos)
+           : base(id, marca, modelo, consumoBaseWatts)
         {
             this.capacidadKilos = capacidadKilos;
             this.tipo = TipoLavadora.DOMESTICA;
         }
 
-        public Lavadora(string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos, TipoLavadora tipo)
-          : base(marca, modelo, consumoBaseWatts)
+        public Lavadora(int id, string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos, TipoLavadora tipo)
+          : base(id, marca, modelo, consumoBaseWatts)
         {
             this.capacidadKilos = capacidadKilos;
             this.tipo = tipo;
