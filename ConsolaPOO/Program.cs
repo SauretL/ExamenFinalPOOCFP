@@ -10,7 +10,7 @@ namespace ConsolaPOO
             // Instanciar el catálogo
             Catalogo catalogo = new Catalogo();
 
-            // Creacion de lavadoras y televisores
+            // Creación de lavadoras y televisores
             Console.WriteLine("Creando lavadoras...");
             Lavadora lavadora1 = new Lavadora(
                 id: 1,
