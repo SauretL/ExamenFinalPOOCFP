@@ -35,6 +35,10 @@
             this.consumoBaseWatts = consumoBaseWatts;
         }
 
+        // Propiedad id solo lectura
+        public int Id { get { return id; } protected set { id = value; }
+    }
+
         //Atributo Abstracto
 
         public abstract string CategoriaEnergetica { get; }
@@ -45,7 +49,7 @@
 
         //Metodo no abstracto
 
-        public string ObtenerInformacion()
+        public string ObtenerInformacionBase()
         {
             string info = $"Marca = {marca} \nModelo: {modelo} \nConsumo Base de Watts: {consumoBaseWatts}";
             return info;

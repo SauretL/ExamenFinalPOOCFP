@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace ClasesPOO
 {
-    internal class Lavadora : Electrodomestico
+    public class Lavadora : Electrodomestico
     {
         //Atributos
 
-        private decimal capacidadKilos;
-        TipoLavadora tipo; 
+        public decimal capacidadKilos;
+        public TipoLavadora tipo; 
 
         //Constante Interna
 
-        private double FACTOR_CARGA = 0.75;
+        private const decimal FACTOR_CARGA = 0.75m;
 
         //Constructores
         public Lavadora(string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos)
            : base(marca, modelo, consumoBaseWatts)
         {
-            CapacidadKilos = capacidadKilos;
-            Tipo = TipoLavadora.DOMESTICA;
+            this.capacidadKilos = capacidadKilos;
+            this.tipo = TipoLavadora.DOMESTICA;
         }
 
         public Lavadora(string marca, string modelo, decimal consumoBaseWatts, decimal capacidadKilos, TipoLavadora tipo)
           : base(marca, modelo, consumoBaseWatts)
         {
-            capacidadKilos = CapacidadKilos;
-            tipo = Tipo;
+            this.capacidadKilos = capacidadKilos;
+            this.tipo = tipo;
         }
 
         // Propiedad abstracta del padre
@@ -52,9 +52,10 @@ namespace ClasesPOO
 
         //Metodo abstracto del padre
 
-        public override decimal CalcularCostoMensual(int horasDiarias, decimal costoPorWatt, double ValorDelTipo, double Kilos)
+        public override decimal CalcularCostoMensual(int horasDiarias, decimal costoPorWatt)
         {
-            decimal consumoReal = consumoBaseWatts + (decimal)(Kilos * FACTOR_CARGA * ValorDelTipo);
+
+            decimal consumoReal = consumoBaseWatts + capacidadKilos * FACTOR_CARGA * (int)tipo;
 
             decimal costoMensual = consumoReal * horasDiarias * 30 * costoPorWatt;
             return costoMensual;
@@ -62,9 +63,10 @@ namespace ClasesPOO
 
         // Metodo Extra
 
-        public string IniciarCicloLavado(double kilos, string tipoDeCiclo)
+        public string IniciarCicloLavado()
         {
-            string txt = $"===INICIANDO CICLO DE LAVADO===\nTipos de ciclo: {tipoDeCiclo}\nKilos dentro del lavarropa: {kilos}kg.";
+            string txt = $"===INICIANDO CICLO DE LAVADO===\nTipo de ciclo: {this.tipo}\nCapacidad de Kilos dentro del lavarropa: {this.capacidadKilos}kg.";
+            return txt;
         }
 
     }

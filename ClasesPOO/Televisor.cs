@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace ClasesPOO
 {
-    internal class Televisor : Electrodomestico
+    public class Televisor : Electrodomestico
     {
         //Atributos
 
-        int pulgadas;
-        ResolucionTV resolucion;
+        public int pulgadas;
+        public ResolucionTV resolucion;
 
         // Constante
-        double FACTOR_PANTALLA = 0.05;
+        private const double FACTOR_PANTALLA = 0.05;
 
         //Constructores
 
         public Televisor(string marca, string modelo, decimal consumoBaseWatts, int pulgadas)
           : base(marca, modelo, consumoBaseWatts)
         {
-            pulgadas = Pulgadas;
-            resolucion = ResolucionTV.FULLHD;
+            this.pulgadas = pulgadas;
+            this.resolucion = ResolucionTV.FULLHD;
         }
 
-        public Televisor(string marca, string modelo, decimal consumoBaseWatts, int pulgadas)
+        public Televisor(string marca, string modelo, decimal consumoBaseWatts, int pulgadas, ResolucionTV resolucion)
   : base(marca, modelo, consumoBaseWatts)
         {
-            Pulgadas = pulgadas;
-            resolucion = Resolucion;
+            this.pulgadas = pulgadas;
+            this.resolucion = resolucion;
         }
 
         // Propiedad abstracta del padre
@@ -52,9 +52,9 @@ namespace ClasesPOO
 
         //Metodo abstracto del padre
 
-        public override decimal CalcularCostoMensual(int horasDiarias, decimal costoPorWatt, double ValorResolucion)
+        public override decimal CalcularCostoMensual(int horasDiarias, decimal costoPorWatt)
         {
-            decimal consumoTotal = consumoBaseWatts + (decimal)(pulgadas * FACTOR_PANTALLA * ValorResolucion);
+            decimal consumoTotal = consumoBaseWatts + (decimal)(pulgadas * FACTOR_PANTALLA * (int)resolucion);
 
             decimal costoMensual = consumoTotal * horasDiarias * 30 * costoPorWatt;
             return costoMensual;
@@ -64,7 +64,8 @@ namespace ClasesPOO
 
         public string ConfigurarCanales()
         {
-            string txt = $"Pulgadas: {pulgadas}\nResolución: {resolucion}";
+            string txt = $"\"===CONFIGURANDO CANALES===\nPulgadas: {pulgadas}\nResolución: {resolucion}";
+            return txt ;
         }
     }
 }
