@@ -1,0 +1,4 @@
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.AssemblyInfoInputs.cache
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.AssemblyInfo.cs
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Examen Final POO\ClasesPOO\ClasesPOO\obj\Debug\net8.0\ClasesPOO.csproj.CoreCompileInputs.cache
